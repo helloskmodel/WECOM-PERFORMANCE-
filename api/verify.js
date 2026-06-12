@@ -1,3 +1,3 @@
-module.exports = (req, res) => {
-  res.status(200).send(req.query.echostr);
+module.exports = function handler(req, res) {
+  res.send(req.query.echostr);
 };
